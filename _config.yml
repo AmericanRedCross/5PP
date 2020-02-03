@@ -1,0 +1,25 @@
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+
+title:        Hello world
+description:  >- # this means to ignore newlines until the next item
+  A test
+
+collections_dir: images
+collections: 
+  - demo
+
+twitter_username: 
+
+source:       app  
+baseurl:      "/5PP" # the subpath of your site, e.g. /blog
+url:           # the base hostname & protocol for your site, e.g. http://example.com
+
+sass:
+    style: compressed
+  
+markdown:   kramdown
+permalink:  pretty
+exclude:
+  - README.md
