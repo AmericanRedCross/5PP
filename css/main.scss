@@ -15,6 +15,10 @@ body {
 
 .imageDropdown {
   margin: 8px 0;
+  .dropdown-menu-right {
+    max-height: 200px;
+    overflow-y: scroll;
+  }
 }
 
 #currentImage {
