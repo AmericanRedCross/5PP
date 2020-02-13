@@ -1,60 +1,30 @@
 <div class="container">
-  
   <div class="row">
-    
-    <div class="col">
-      <h1>Hello world. <small class="text-muted">This is a test.</small></h1>
-    </div>
-    
-    <div class="col text-right">
-      <div class="dropdown imageDropdown">
-        <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Select a day
-        </button>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
-          {% for image in images %}
-            <button class="dropdown-item imageSelect {% if forloop.first == true %}active{% endif %}" data-name="{{ image.basename }}" data-path="{{ image.path | relative_url }}" type="button">{{ image.basename }}</button>
-          {% endfor %}
-        </div>
-      </div>
-    </div>
-    
-  </div>
-  
-  <ul id="lightSlider">
-    <li>
-        <h3>First Slide</h3>
-        <p>Lorem ipsum Cupidatat quis pariatur anim.</p>
-    </li>
-    <li>
-        <h3>Second Slide</h3>
-        <p>Lorem ipsum Excepteur amet adipisicing fugiat velit nisi.</p>
-    </li>
-    ...
-  </ul>
-  
-  <div class="row">  
-    <div class="col">
+    <div id="lightgallery">
       {% for image in images %}
-        {% if forloop.first == true %}
-          <img id="currentImage" src="{{ image.path | relative_url }}" alt="{{ image.name }}">
-        {% endif %}
+        <a href="{{ image.path | relative_url }}"></a>
       {% endfor %}
-    </div>  
+    </div>
   </div>
+</div> <!-- /container  -->  
 
-</div> <!-- /container  -->
-
-<script type="text/javascript"> 
-window.onload = function() {
+<script type="text/javascript">
   
-  $('.imageSelect').click( function(){
-    $(".imageSelect").removeClass("active");
-    $(this).addClass("active");
-    $("#currentImage").attr('src', $(this).data("path"));
-    $("#currentImage").attr('alt', $(this).data("name"));
+  $(document).ready(function() {
+    
+    $('#lightgallery').lightGallery({
+      closable:false,
+      mode:'lg-fade',
+      hash:true,
+      share:false,
+      zoom:false,
+      pager:true,
+      thumbnail:false,
+      escKey:false
+    });
+    $('#lightgallery a').last().trigger('click');
+    
   });
   
-}
 </script>
   

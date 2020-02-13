@@ -1,0 +1,7 @@
+---
+layout: default
+---
+{% assign images = site.static_files | where_exp: "item", "item.path contains 'images/2019-kenya'" %}
+{% assign imageCount = images | size  %}
+{% include images.html %}
+{% include footer.html %}

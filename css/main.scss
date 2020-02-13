@@ -1,8 +1,48 @@
 ---
+# Front matter comment to ensure Jekyll properly reads file.
 ---
 
+// light gallery variable overrides
+$lg-progress-bar-active-bg: #262626;
+$lg-progress-bar-bg: #595959;
+$zindex-controls: 1081;
+
+// Core variables and mixins
+@import "lg-variables";
+@import "lg-mixins";
+@import "lg-fonts";
+@import "lg-theme-default";
+// @import "lg-thumbnail";
+// @import "lg-video";
+@import "lg-autoplay";
+// @import "lg-zoom";
+@import "lg-pager";
+@import "lg-fullscreen";
+// @import "lg-share";
+
+// Core
+@import "lg-core";
+
+// lightgallery overrides 
+.lg-close {
+  display: none;
+}
+.lg-outer .lg-img-wrap {
+  padding-top: 47px;
+  padding-bottom: 42px;
+}
+.lg-outer .lg-pager-outer {
+  bottom: 14px;
+}
+.lg-actions .lg-next, .lg-actions .lg-prev {
+  bottom: 0px;
+  top: auto;
+}
+
+// custom variables
 $theme-red:       #F4333E;
 $secondary:       #6C757D;
+
 
 html {
   position: relative;
