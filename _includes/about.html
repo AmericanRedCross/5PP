@@ -1,7 +1,22 @@
 <div class="container">
-  <div class="row">
-    <div class="col">
-      <h1> lorem ipsum </h1>
+  
+  <div class="row justify-content-center">
+    <div class="col col-sm-10">
+      <h2>5-Point Plan</h2>
+      <p class="lead">Our 5-Point Plan consists of sequential, interconnected steps utilizing the vast resources at community-level to: find clusters of unvaccinated children; determine the reasons why children aren’t vaccinated from caregivers and frontline health workers; share information to solve identified reasons; inform the community of the actions taken; and evaluate the process. The dashboards below show the progress during implementations of the Plan.</p>
     </div>
   </div>
+
+  <div class="row justify-content-center">
+  {% assign galleries = site.pages | sort: 'order' %}
+  {% for gallery in galleries %}
+    {% if gallery.title != "index" and gallery.title | size > 0 %}
+      <div class="col col-sm-5">
+        <h5><a href="{{ site.baseurl }}{{ gallery.url }}">{{gallery.title }}</a></h5>
+        <p>{{gallery.description }}</p>
+      </div>
+    {% endif %}
+  {% endfor %}
+  </div>
+
 </div>
