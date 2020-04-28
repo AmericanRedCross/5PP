@@ -10,6 +10,7 @@ As part of the 5PP program implementation an R script is used to produce a dashb
 - Create a new `.html` file in the main `5PP` project folder and give it the same name as your new images folder.
 - Add the below text into the new `.html` file.
   - Update the title and description.
+  - Update the order number.
   - Change `my-folder-name` to the name of your new folder.
 
 ```
