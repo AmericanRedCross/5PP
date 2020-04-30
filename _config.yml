@@ -13,8 +13,8 @@ collections:
 
 twitter_username: 
 
-baseurl:      "/5PP" # the subpath of your site, e.g. /blog
-url:           # the base hostname & protocol for your site, e.g. http://example.com
+baseurl:      "/" # the subpath of your site, e.g. /blog
+url:           "https://5pp.measlesrubellainitiative.org# the base hostname & protocol for your site, e.g. http://example.com
 
 sass:
     style: compressed
