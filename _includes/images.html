@@ -2,7 +2,9 @@
   <div class="row">
     <div id="lightgallery">
       {% for image in images %}
+        {% if image.extname != ".md" %}
         <a href="{{ image.path | relative_url }}"></a>
+        {% endif %}
       {% endfor %}
     </div>
   </div>
