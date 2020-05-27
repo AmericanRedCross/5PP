@@ -36,6 +36,7 @@ As part of the 5PP program implementation an R script is used to produce a dashb
 ## Adding a new gallery page
 
 - Create a new folder in `./images` with the name you want to be included in your URL.
+  - GitHub ignores empty folders when evaluating changes, so create a `README.md` file inside the folder if you're going to skip the next step and wait until later to add images. Placing  a file into the folder will make the folder available to users in the web interface. The `.md` extension is important, the gallery page will ignore that extension when placing files into the image carousel. 
 - Add images to the folder. The image file names should sort in the order you want them to appear in the gallery. Using [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standards for representing dates and times is a good option. 
 - Add the folder name as a list item under `collections:` in the `_config.yml` file.
 - Create a new `.html` file in the main `5PP` project folder and give it the same name as your new images folder.
