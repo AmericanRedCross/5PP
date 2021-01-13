@@ -4,10 +4,17 @@
     <div class="col col-sm-10">
       <h2>5-Point Plan</h2>
       <p class="lead">Our 5-Point Plan consists of sequential, interconnected steps utilizing the vast resources at community-level to: find clusters of unvaccinated children; determine the reasons why children aren’t vaccinated from caregivers and frontline health workers; share information to solve identified reasons; inform the community of the actions taken; and evaluate the process. The dashboards below show the progress during implementations of the Plan.</p>
+      <h4>Plan Overview</h4>
+      <p style="text-align:center;">
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/UqpeIgs62s4?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><em>Video outlining the American Red Cross model for strengthening routine immunization systems.</em>
+      </p>
     </div>
   </div>
-
   <div class="row justify-content-center">
+    <div class="col col-sm-10">
+      <h4>Dashboards</h4>  
+    </div>
   {% assign galleries = site.pages | sort: 'order' %}
   {% for gallery in galleries %}
     {% if gallery.title != "index" and gallery.title | size > 0 %}
