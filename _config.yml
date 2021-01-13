@@ -8,7 +8,6 @@ description:  >- # this means to ignore newlines until the next item
 
 collections_dir: images
 collections: 
-  - demo
   - 2019-kenya
 
 twitter_username: 
