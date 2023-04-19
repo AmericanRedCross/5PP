@@ -2,6 +2,7 @@
 
 As part of the 5PP program implementation an R script is used to produce a dashboard image at regular interval, so this project lets you load a folder with images with chronological filenames (i.e. `2020-01-02.jpg`) and then view the series in a gallery on a simple webpage. 
 
+
 ## Adding images to a gallery
 
 - [Create an account on GitHub](https://github.com/join?source=header-home) if you don't already have one.
