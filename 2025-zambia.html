@@ -1,0 +1,10 @@
+---
+layout: default
+title: 2025 Zambia
+description: "This implementation of Point 5 of the 5-Point Plan is taking place from 25 March to 2 April 2025 in Kabwe District, Central Province, Zambia."
+order: 5
+---
+{% assign images = site.static_files | where_exp: "item", "item.path contains 'images/2025-zambia'" %}
+{% assign imageCount = images | size  %}
+{% include images.html %}
+{% include footer.html %}
