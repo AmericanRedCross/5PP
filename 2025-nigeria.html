@@ -1,0 +1,10 @@
+---
+layout: default
+title: 2025 Nigeria
+description: "This implementation of the 5-Point Plan will occur from 12-26 November 2025 in Ona-Ara LGA, Oyo State, Nigeria."
+order: 6
+---
+{% assign images = site.static_files | where_exp: "item", "item.path contains 'images/2025-nigeria'" %}
+{% assign imageCount = images | size  %}
+{% include images.html %}
+{% include footer.html %}
